@@ -89,9 +89,9 @@ const About = () => {
             </div>
             <div className="space-y-4">
               {[
-                { label: 'Experience', value: '3+ Years' },
-                { label: 'Projects Completed', value: '50+' },
-                { label: 'Happy Clients', value: '30+' },
+                { label: 'Experience', value: '2+ Years' },
+                { label: 'Projects Completed', value: '10+' },
+                { label: 'Happy Clients', value: '10+' },
                 { label: 'Coffee Consumed', value: '∞' },
               ].map((stat, index) => (
                 <motion.div
