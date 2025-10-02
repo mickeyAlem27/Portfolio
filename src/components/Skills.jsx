@@ -21,8 +21,9 @@ const Skills = () => {
         { name: 'Node.js', level: 90 },
         { name: 'Express', level: 90 },
         { name: 'MongoDB', level: 90 },
-        { name: 'Firebase',level: 90 },
+        { name: 'Firebase', level: 90 },
         { name: 'mySQL', level: 85 },
+        { name: 'C++', level: 90 },
       ],
     },
     {
@@ -30,6 +31,7 @@ const Skills = () => {
       skills: [
         { name: 'Git', level: 92 },
         { name: 'Docker', level: 90 },
+        { name: 'Render', level: 90 },
         { name: 'AWS', level: 70 },
         { name: 'CI/CD', level: 65 },
       ],

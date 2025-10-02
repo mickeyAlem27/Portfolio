@@ -18,14 +18,14 @@ const Projects = () => {
     {
       title: 'TikTok-Like Mobile App',
       description: 'Short-form video platform with infinite scroll, video recording, filters, likes, comments, and user profiles.',
-      tags: ['React Native', 'Firebase', 'FFmpeg', 'Expo'],
+      tags: ['React Native', 'Firebase', 'FFmpeg', 'Render'],
       gradient: 'from-purple-500 to-pink-500',
       image: '📱',
     },
     {
       title: 'Upwork-Like Freelance Platform',
       description: 'Complete freelance marketplace connecting clients with professionals, featuring job posting, bidding, escrow payments, and reviews.',
-      tags: ['React', 'Node.js', 'MySQL', 'Stripe'],
+      tags: ['React', 'Node.js', 'MongoDB', 'Render'],
       gradient: 'from-green-500 to-emerald-500',
       image: '💼',
     },
@@ -95,14 +95,14 @@ const Projects = () => {
                     className="flex items-center gap-2 text-primary-400 hover:text-primary-300 transition-colors"
                   >
                     <ExternalLink size={18} />
-                    <span>Live Demo</span>
+                    
                   </a>
                   <a
                     href="#"
                     className="flex items-center gap-2 text-gray-400 hover:text-gray-300 transition-colors"
                   >
                     <Github size={18} />
-                    <span>Code</span>
+                    
                   </a>
                 </div>
               </div>
