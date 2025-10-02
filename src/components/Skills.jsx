@@ -19,17 +19,17 @@ const Skills = () => {
       title: 'Backend',
       skills: [
         { name: 'Node.js', level: 90 },
-        { name: 'Express', level: 88 },
-        { name: 'MongoDB', level: 85 },
-        { name: 'Firebase', level: 82 },
-        { name: 'mySQL', level: 75 },
+        { name: 'Express', level: 90 },
+        { name: 'MongoDB', level: 90 },
+        { name: 'Firebase',level: 90 },
+        { name: 'mySQL', level: 85 },
       ],
     },
     {
       title: 'Tools & Others',
       skills: [
         { name: 'Git', level: 92 },
-        { name: 'Docker', level: 80 },
+        { name: 'Docker', level: 90 },
         { name: 'AWS', level: 70 },
         { name: 'CI/CD', level: 65 },
       ],
