@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { ExternalLink, Github } from 'lucide-react'
 
 const Projects = () => {
@@ -30,6 +30,8 @@ const Projects = () => {
       image: '💼',
     },
   ]
+
+  const [likes, setLikes] = useState([0, 0, 0])
 
   return (
     <section id="projects" className="py-20 px-6" ref={ref}>
@@ -86,6 +88,31 @@ const Projects = () => {
                       {tag}
                     </span>
                   ))}
+                </div>
+
+                {/* Likes */}
+                <div className="flex items-center gap-2 mb-4">
+                  {index === 0 ? (
+                    <a
+                      href="https://front-u22f.onrender.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-3 py-2 bg-primary-500 hover:bg-primary-600 rounded-lg text-white transition-colors"
+                    >
+                      Check Out
+                    </a>
+                  ) : (
+                    <button
+                      onClick={() => {
+                        const newLikes = [...likes];
+                        newLikes[index]++;
+                        setLikes(newLikes);
+                      }}
+                      className="flex items-center gap-2 px-3 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-white transition-colors"
+                    >
+                      👍 Like ({likes[index]})
+                    </button>
+                  )}
                 </div>
 
                 {/* Links */}
