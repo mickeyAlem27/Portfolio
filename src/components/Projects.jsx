@@ -14,6 +14,17 @@ const Projects = () => {
       tags: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
       gradient: 'from-blue-500 to-cyan-500',
       image: '💬',
+      demo: 'https://front-u22f.onrender.com',
+    },
+    
+    {
+      title: 'Thief-Police CAPTCHA',
+      description:
+        'Cloudflare-inspired human verification experience packaged for TikTok-like apps, complete with cheeky Thief vs Police storytelling and npm-ready integration.',
+      tags: ['React', 'Cloudflare Workers', 'Security', 'NPM'],
+      gradient: 'from-orange-500 to-red-500',
+      image: '🛡️',
+      demo: 'https://simple-verification.onrender.com',
     },
     {
       title: 'TikTok-Like Mobile App',
@@ -31,7 +42,7 @@ const Projects = () => {
     },
   ]
 
-  const [likes, setLikes] = useState([0, 0, 0])
+  const [likes, setLikes] = useState(() => Array(projects.length).fill(0))
 
   return (
     <section id="projects" className="py-20 px-6" ref={ref}>
@@ -92,21 +103,21 @@ const Projects = () => {
 
                 {/* Likes */}
                 <div className="flex items-center gap-2 mb-4">
-                  {index === 0 ? (
+                  {project.demo ? (
                     <a
-                      href="https://front-u22f.onrender.com"
+                      href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 px-3 py-2 bg-primary-500 hover:bg-primary-600 rounded-lg text-white transition-colors"
                     >
-                      Check Out
+                      Visit Demo
                     </a>
                   ) : (
                     <button
                       onClick={() => {
-                        const newLikes = [...likes];
-                        newLikes[index]++;
-                        setLikes(newLikes);
+                        const newLikes = [...likes]
+                        newLikes[index]++
+                        setLikes(newLikes)
                       }}
                       className="flex items-center gap-2 px-3 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-white transition-colors"
                     >
